@@ -1,0 +1,286 @@
+{
+  "n_rows": 4200,
+  "class_counts": {
+    "ENTY": 700,
+    "DESC": 700,
+    "LOC": 700,
+    "NUM": 700,
+    "HUM": 700,
+    "ABBR": 700
+  },
+  "n_templates": 48,
+  "random": {
+    "train": 3360,
+    "test": 840,
+    "results": {
+      "Majority baseline": {
+        "accuracy": 0.16666666666666666,
+        "macro_f1": 0.047619047619047616
+      },
+      "TF-IDF + Naive Bayes": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "TF-IDF + Logistic Regression": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "TF-IDF + Linear SVM": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "Word+Char TF-IDF + Linear SVM": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      }
+    },
+    "best": "TF-IDF + Naive Bayes",
+    "per_class": {
+      "ABBR": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      },
+      "DESC": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      },
+      "ENTY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      },
+      "HUM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      },
+      "LOC": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      },
+      "NUM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 840.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 840.0
+      }
+    },
+    "confusion": [
+      [
+        140,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        140,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        140,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        140,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        140
+      ]
+    ],
+    "n_errors": 0,
+    "cv_macro_f1_mean": 0.9997619017249371,
+    "cv_macro_f1_std": 0.00047619655012609563
+  },
+  "heldout": {
+    "train": 3147,
+    "test": 1053,
+    "test_templates": [
+      "ABBR_03",
+      "ABBR_04",
+      "DESC_03",
+      "DESC_07",
+      "ENTY_03",
+      "ENTY_05",
+      "HUM_01",
+      "HUM_02",
+      "LOC_02",
+      "LOC_05",
+      "NUM_03",
+      "NUM_05"
+    ],
+    "results": {
+      "Majority baseline": {
+        "accuracy": 0.14814814814814814,
+        "macro_f1": 0.04301075268817204
+      },
+      "TF-IDF + Naive Bayes": {
+        "accuracy": 0.6153846153846154,
+        "macro_f1": 0.5558639546324582
+      },
+      "TF-IDF + Logistic Regression": {
+        "accuracy": 0.6685660018993352,
+        "macro_f1": 0.611549911699259
+      },
+      "TF-IDF + Linear SVM": {
+        "accuracy": 0.6676163342830009,
+        "macro_f1": 0.612245479615711
+      },
+      "Word+Char TF-IDF + Linear SVM": {
+        "accuracy": 0.7122507122507122,
+        "macro_f1": 0.6460090666882686
+      }
+    },
+    "best": "Word+Char TF-IDF + Linear SVM",
+    "per_class": {
+      "ABBR": {
+        "precision": 0.763265306122449,
+        "recall": 1.0,
+        "f1-score": 0.8657407407407407,
+        "support": 187.0
+      },
+      "DESC": {
+        "precision": 0.6391752577319587,
+        "recall": 0.6595744680851063,
+        "f1-score": 0.6492146596858639,
+        "support": 188.0
+      },
+      "ENTY": {
+        "precision": 0.6065573770491803,
+        "recall": 0.9840425531914894,
+        "f1-score": 0.7505070993914807,
+        "support": 188.0
+      },
+      "HUM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 156.0
+      },
+      "LOC": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 166.0
+      },
+      "NUM": {
+        "precision": 0.6405228758169934,
+        "recall": 0.5833333333333334,
+        "f1-score": 0.6105919003115264,
+        "support": 168.0
+      },
+      "accuracy": 0.7122507122507122,
+      "macro avg": {
+        "precision": 0.6082534694534302,
+        "recall": 0.7044917257683214,
+        "f1-score": 0.6460090666882686,
+        "support": 1053.0
+      },
+      "weighted avg": {
+        "precision": 0.6082964774178604,
+        "recall": 0.7122507122507122,
+        "f1-score": 0.6492123917164252,
+        "support": 1053.0
+      }
+    },
+    "confusion": [
+      [
+        187,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        124,
+        35,
+        0,
+        0,
+        27
+      ],
+      [
+        0,
+        0,
+        185,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        156,
+        0,
+        0
+      ],
+      [
+        56,
+        0,
+        85,
+        0,
+        0,
+        25
+      ],
+      [
+        0,
+        70,
+        0,
+        0,
+        0,
+        98
+      ]
+    ],
+    "n_errors": 303
+  }
+}
